@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>전원품질 리포트 — 개인정보처리방침</title>
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1f2328; --muted:#5a6472;
+    --line:#e3e6ea; --accent:#2e692a; --box:#f6f8f6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#15171a; --fg:#e6e8ea; --muted:#a2abb6;
+      --line:#2c3036; --accent:#7cc06f; --box:#1d2124;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#15171a; --fg:#e6e8ea; --muted:#a2abb6;
+    --line:#2c3036; --accent:#7cc06f; --box:#1d2124;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:28px 18px 64px;
+    background:var(--bg); color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo",
+                "Malgun Gothic","Noto Sans KR",sans-serif;
+    line-height:1.75; font-size:16px;
+  }
+  .wrap{max-width:760px; margin:0 auto}
+  h1{font-size:1.6rem; margin:0 0 6px; letter-spacing:-.02em}
+  .updated{color:var(--muted); font-size:.86rem; margin-bottom:26px}
+  h2{
+    font-size:1.08rem; margin:34px 0 10px; padding-top:16px;
+    border-top:1px solid var(--line); color:var(--accent);
+  }
+  h2:first-of-type{border-top:0; padding-top:0}
+  p{margin:10px 0}
+  ul{margin:10px 0; padding-left:20px}
+  li{margin:6px 0}
+  .notice{
+    background:var(--box); border-left:3px solid var(--accent);
+    padding:14px 16px; margin:18px 0; border-radius:4px;
+    font-size:.94rem;
+  }
+  .muted{color:var(--muted); font-size:.9rem}
+  table{border-collapse:collapse; width:100%; margin:12px 0; font-size:.94rem}
+  th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top}
+  th{background:var(--box); font-weight:600}
+  .scroll{overflow-x:auto}
+  code{
+    background:var(--box); padding:2px 6px; border-radius:4px;
+    font-size:.88em; word-break:break-all;
+  }
+  footer{
+    margin-top:44px; padding-top:18px; border-top:1px solid var(--line);
+    color:var(--muted); font-size:.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>개인정보처리방침</h1>
+  <div class="updated">앱 이름: 전원품질 리포트 · 최종 수정일: 2026년 9월 1일</div>
+
+  <div class="notice">
+    <strong>비공식 third-party 도구 안내</strong><br>
+    본 앱은 비공식 third-party 애플리케이션입니다. KYORITSU(쿄리츠)와 제휴 관계가 없으며,
+    KYORITSU의 승인을 받거나 KYORITSU가 제공하는 앱이 아닙니다.
+    KYORITSU는 본 앱에 대하여 어떠한 지원·기술지원·유지보수·보증도 제공하지 않으며,
+    본 앱의 사용으로 발생하는 문제, 손해, 데이터 오류, 손실에 대해 책임을 지지 않습니다.
+  </div>
+
+  <h2>1. 총칙</h2>
+  <p>
+    본 방침은 「전원품질 리포트」(이하 "본 앱")가 이용자의 정보를 어떻게 취급하는지 설명합니다.
+    본 앱은 전기설비 측정 데이터 파일을 읽어 그래프와 분석 리포트를 생성하는 도구입니다.
+  </p>
+  <p><strong>본 앱은 이용자의 개인정보를 수집하거나 저장하지 않습니다.</strong></p>
+
+  <h2>2. 수집하지 않는 정보</h2>
+  <p>본 앱은 다음 정보를 일절 수집하지 않습니다.</p>
+  <ul>
+    <li>이름, 이메일, 전화번호 등 개인 식별정보</li>
+    <li>위치정보, 연락처, 사진, 통화기록</li>
+    <li>기기 고유식별자, 광고 식별자</li>
+    <li>이용자의 앱 사용 이력 및 행태정보</li>
+  </ul>
+  <p>본 앱은 회원가입 절차가 없으며, 계정을 생성하지 않습니다.</p>
+
+  <h2>3. 파일 접근</h2>
+  <p>
+    본 앱은 안드로이드 저장소 접근 프레임워크(SAF)를 사용합니다.
+    <strong>이용자가 직접 선택한 폴더에만</strong> 접근하며, 그 외 기기 내 다른 파일에는 접근할 수 없습니다.
+  </p>
+  <div class="scroll">
+    <table>
+      <tr><th>대상</th><th>용도</th></tr>
+      <tr>
+        <td>측정 데이터 파일<br>(.KEW, .CSV)</td>
+        <td>그래프 표시 및 리포트 생성을 위해 읽기</td>
+      </tr>
+      <tr>
+        <td>선택한 폴더</td>
+        <td>변환된 CSV 및 생성된 PDF 리포트 저장</td>
+      </tr>
+    </table>
+  </div>
+  <p class="muted">
+    읽어들인 측정 데이터는 기기 내에서 처리되며, 아래 4항의 AI 분석 기능을 사용하는 경우를 제외하고
+    외부로 전송되지 않습니다.
+  </p>
+
+  <h2>4. AI 분석 기능 사용 시 데이터 전송</h2>
+  <p>
+    이용자가 <strong>[AI 분석] 기능을 직접 실행한 경우에 한하여</strong>, 분석에 필요한
+    측정 수치가 분석 서버로 전송됩니다. 이 기능을 사용하지 않으면 어떠한 데이터도 전송되지 않습니다.
+  </p>
+  <div class="scroll">
+    <table>
+      <tr><th>구분</th><th>내용</th></tr>
+      <tr>
+        <td>전송되는 정보</td>
+        <td>전압, 전류, 역률, THD, 불평형률, 고조파 등 <strong>측정 수치</strong>와
+            계측기 설정값(결선방식, 공칭전압)</td>
+      </tr>
+      <tr>
+        <td>전송되지 않는 정보</td>
+        <td>현장명, 고객명, 주소 등 식별정보 / 개인정보 / 기기 정보</td>
+      </tr>
+      <tr>
+        <td>전송 목적</td>
+        <td>측정값 기반 전원품질 분석 리포트 생성</td>
+      </tr>
+      <tr>
+        <td>처리 위탁</td>
+        <td>Google Gemini API (분석 문장 생성)</td>
+      </tr>
+      <tr>
+        <td>보관 여부</td>
+        <td>분석 서버는 요청 처리 후 측정 데이터를 저장하지 않습니다.</td>
+      </tr>
+      <tr>
+        <td>전송 구간 보안</td>
+        <td>모든 통신은 HTTPS로 암호화됩니다.</td>
+      </tr>
+    </table>
+  </div>
+  <p class="muted">
+    Google Gemini API의 데이터 처리 정책은
+    Google의 정책을 따릅니다. 민감한 현장 정보가 포함되지 않도록,
+    본 앱은 식별정보를 제외한 측정 수치만 전송합니다.
+  </p>
+
+  <h2>5. 앱 권한</h2>
+  <div class="scroll">
+    <table>
+      <tr><th>권한</th><th>사용 목적</th><th>필수 여부</th></tr>
+      <tr>
+        <td><code>INTERNET</code></td>
+        <td>AI 분석 기능 사용 시 분석 서버와 통신</td>
+        <td>AI 분석 사용 시에만 필요</td>
+      </tr>
+    </table>
+  </div>
+  <p>
+    본 앱은 저장소 전체 접근 권한(<code>MANAGE_EXTERNAL_STORAGE</code>,
+    <code>READ_EXTERNAL_STORAGE</code>)을 요구하지 않습니다.
+  </p>
+
+  <h2>6. 광고 및 분석 도구</h2>
+  <p>
+    본 앱은 광고를 게재하지 않으며, 사용자 행태를 추적하는 분석 도구(Analytics)나
+    광고 SDK를 포함하지 않습니다.
+  </p>
+
+  <h2>7. 제3자 제공</h2>
+  <p>
+    본 앱은 이용자의 정보를 제3자에게 판매하거나 제공하지 않습니다.
+    다만 4항에 기재된 AI 분석 기능 이용 시, 분석 목적에 한하여 측정 수치가
+    분석 서버 및 Google Gemini API로 전달됩니다.
+  </p>
+
+  <h2>8. 아동의 개인정보</h2>
+  <p>
+    본 앱은 전기설비 측정 실무용 도구로, 만 14세 미만 아동을 대상으로 하지 않으며
+    아동의 개인정보를 의도적으로 수집하지 않습니다.
+  </p>
+
+  <h2>9. 이용자의 권리</h2>
+  <p>
+    본 앱은 개인정보를 수집·보관하지 않으므로 별도의 열람·정정·삭제 절차가 없습니다.
+    앱이 생성한 파일(CSV, PDF)은 이용자가 선택한 폴더에 저장되며,
+    <strong>이용자가 직접 삭제·이동할 수 있습니다.</strong>
+    앱을 삭제하면 앱이 사용하던 임시 데이터도 함께 제거됩니다.
+  </p>
+
+  <h2>10. 분석 결과의 한계</h2>
+  <p>
+    본 앱이 생성하는 분석 리포트는 측정 데이터의 대표값을 기반으로 한
+    <strong>참고 자료</strong>입니다. 정확한 진단 및 설비 설계는 현장 실측과
+    전문가 검토가 필요하며, 분석 결과에 근거한 판단과 조치의 책임은 이용자에게 있습니다.
+  </p>
+
+  <h2>11. 방침 변경</h2>
+  <p>
+    본 방침이 변경되는 경우 본 페이지를 통해 공지하며, 상단의 최종 수정일이 갱신됩니다.
+    중요한 변경 사항은 앱 업데이트를 통해 안내합니다.
+  </p>
+
+  <h2>12. 문의처</h2>
+  <p>
+    본 방침 또는 앱에 관한 문의는 아래로 연락해 주시기 바랍니다.<br>
+    이메일: <code>[dev@eeree.kr]</code>
+  </p>
+
+  <footer>
+    본 앱은 KYORITSU와 제휴 관계가 없는 비공식 third-party 도구입니다.<br>
+    제품명 및 상표는 각 권리자의 재산입니다.<br>
+    © 2026 전원품질 리포트
+  </footer>
+
+</div>
+</body>
+</html>
